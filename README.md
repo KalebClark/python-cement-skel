@@ -1,11 +1,26 @@
 # Base project for python/Cement CLI application
 This project is a template for building Command Line Interface applications in python 
-using the Cement framework
+using the Cement framework.
+
+The main purpose of this project is to create a standard base project for new Cement projects
+that I use. I did not like the way that the Cement examples were laid out and wanted a more
+organized approach with a few extras
+
+## Running
+Run the application by executing the ```python.py``` file in the root of the project.
+```
+./project.py
+```
 
 ## Features
 
+### Separation of controllers into modules
+This was one of the main issues I wanted to fix. All controllers are stored in seperate files
+in the ```App\Controllers``` directory
+
 ### Configuration
-Configuration is stored inside the config.conf file in the root of this project.
+Configuration is stored inside the config.conf file in the root of this project. It is based
+on ConfigParser and will work with standard ConfigParser options.
 
 The [App] Section holds information about the application such as version, description etc.
 
